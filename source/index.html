@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -114,7 +115,7 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="page-main__title--contact">Контакты</h2>
+        <h2 class="page-main__title--small">Контакты</h2>
         <table class="contacts__info contact">
           <tr>
             <th class="contact__title">
@@ -136,8 +137,27 @@
         <!--map-->
         <a class="contacts__button" href="#">Напишите нам</a>
       </section>
+      <div class="pop-up">
+        <h2 class="pop-up__title">Добавить в корзину</h2>
+        <p class="pop-up__text">Выберите размер:</p>
+        <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
+          <ul class="pop-up__list size">
+          <li class="size__item">
+            <label class="size__label"><input class="size_input" type="radio" name="size" value="small">S</label>
+          </li>
+          <li class="size__item">
+            <label class="size__label"><input class="size_input" type="radio" name="size" value="midle">M</label>
+          </li>
+          <li class="size__item">
+            <label class="size__label"><input class="size_input" type="radio" name="size" value="large">L</label>
+          </li>
+          </ul>
+          <button class="size-form__button" type="submit">Добавить</button>
+          </form>
+      </div>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo" href="#"></a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
