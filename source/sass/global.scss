@@ -1,12 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-  background: white;
+  background: $main-white;
   font-family: "Open Sans", "Helvetica", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: $black;
 }
 
 img {
@@ -25,4 +26,14 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+  }
 }
