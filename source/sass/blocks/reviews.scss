@@ -9,6 +9,7 @@
     background: url("../img/review@1x.jpg");
   }
 }
+
 .reviews__write {
   width: 260px;
 
@@ -16,6 +17,7 @@
     width: 175px;
   }
 }
+
 .reviews__text {
   width: 260px;
   font-family: $main-font;
@@ -30,6 +32,7 @@
     width: 773px;
   }
 }
+
 .review__author--contact {
   font-family: $main-font;
   @include font(17px, bold);
