@@ -9,6 +9,9 @@
     display: none;
   }
 }
+.user-nav__list {
+  display: none;
+}
 
 .user-nav__list {
   display: none;
@@ -25,7 +28,7 @@
 .user-nav__link {
   font-family: $main-font;
 
-  @include font(15px,bold);
+  @include font(15px, bold);
   color: $black;
   line-height: 24px;
 }
@@ -37,7 +40,19 @@
     display: block;
     font-family: $main-font;
 
-    @include font(15px,normal);
+    @include font(15px, normal);
+    color: $black;
+    line-height: 24px;
+  }
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: $main-font;
+    @include font(15px, normal);
     color: $black;
     line-height: 24px;
   }
