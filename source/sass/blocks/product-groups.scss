@@ -1,10 +1,10 @@
-.product-groups__interior{
+.product-groups__interior {
     background-color: $icon-green;
 }
-.product-groups__toy{
+.product-groups__toy {
     background-color: $green;
 }
-.product-groups__item{
+.product-groups__item {
     font-family: $main-font;
     @include font(19px,bold);
     color: $main-white;
