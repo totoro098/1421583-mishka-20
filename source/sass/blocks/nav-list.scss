@@ -2,7 +2,7 @@
     list-style: none;
 }
 
-.nav-list__link{
+.nav-list__link {
     font-family: $main-font;
     @include font(17px,bold);
     color: $black;
@@ -15,13 +15,12 @@
     @media (min-width: $desktop-width) {
         @include font(17px,bold);
         line-height: 24px;
-    }  
+    }
 }
-.nav-list__link--text{
+.nav-list__link--text {
     display: block;
 
     @media (min-width: $tablet-width) {
         display: none;
     }
 }
-
