@@ -9,7 +9,7 @@
         display: none;
     }
 }
-.user-nav__list{
+.user-nav__list {
     display: none;
 
     @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
     line-height: 24px;
 }
 
-.main-nav__text{
+.main-nav__text {
     display: none;
 
     @media (min-width: $tablet-width) {
