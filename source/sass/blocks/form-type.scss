@@ -11,6 +11,7 @@
     line-height: 19px;
   }
 }
+
 .form-type__legend {
   width: 260px;
   margin-bottom: 24px;
@@ -23,6 +24,7 @@
     margin-top: 22px;
   }
 }
+
 .form-type__label {
 
   @include font(17px,bold);
