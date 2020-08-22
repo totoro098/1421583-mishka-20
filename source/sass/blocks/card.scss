@@ -10,9 +10,6 @@
     @include font(15px,normal);
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .card__price {
