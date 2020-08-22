@@ -1,12 +1,13 @@
 .form-full-name {
   border: none;
-  @include font(17px, bold);
+
+  @include font(17px,bold);
   line-height: 18px;
   font-family: $main-font;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    @include font(18px, bold);
+    @include font(18px,bold);
     line-height: 19px;
   }
 }
@@ -15,7 +16,7 @@
   width: 260px;
   margin-bottom: 24px;
 
-  @include font(17px, bold);
+  @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
   color: $icon-green;

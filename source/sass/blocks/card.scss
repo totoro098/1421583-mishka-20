@@ -1,23 +1,26 @@
 .card__text {
   font-family: $main-font;
 
-  @include font(13px, normal);
+  @include font(13px,normal);
   color: $black;
   line-height: 30px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include font(15px, normal);
+    @include font(15px,normal);
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
 
 .card__price {
-  @include font(15px, bold);
+  @include font(15px,bold);
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    @include font(17px, bold);
+    @include font(17px,bold);
     line-height: 24px;
   }
 }
