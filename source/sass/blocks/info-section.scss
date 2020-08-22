@@ -1,15 +1,16 @@
 .advantages-list__item {
-    font-family: $main-font;
-    @include font(17px,bold);
-    color: $black;
-    line-height: 20px;
-    @media (min-width: $tablet-width) {
-        @include font(20px,bold);
-        line-height: 22px;
-    }
+  font-family: $main-font;
 
-    @media (min-width: $desktop-width) {
-        @include font(20px,bold);
-        line-height: 22px;
-    }
+  @include font(17px,bold);
+  color: $black;
+  line-height: 20px;
+  @media (min-width: $tablet-width) {
+    @include font(20px,bold);
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(20px,bold);
+    line-height: 22px;
+  }
 }

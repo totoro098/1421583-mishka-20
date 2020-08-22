@@ -1,16 +1,15 @@
 .cards__item {
-    list-style: none;
-    font-family: $main-font;
-    @include font(17px,bold);
-    color: $black;
-    width: 260px;
-    line-height: 20px;
-    margin: 0;
+  list-style: none;
+  font-family: $main-font;
+  
+  @include font(17px,bold);
+  color: $black;
+  width: 260px;
+  line-height: 20px;
+  margin: 0;
 
-    @media (min-width: $tablet-width) {
-        @include font(20px,bold);
-        line-height: 22px;
-    }
-    @media (min-width: $desktop-width) {
-    }
+  @media (min-width: $tablet-width) {
+    @include font(20px,bold);
+    line-height: 22px;
+  }
 }
