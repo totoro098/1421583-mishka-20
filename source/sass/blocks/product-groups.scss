@@ -8,16 +8,37 @@
 
 .product-groups__item {
   font-family: $main-font;
+
   @include font(19px, bold);
   color: $main-white;
   line-height: 24px;
   padding: 25px 160px 31px 30px;
+
   @media (min-width: $tablet-width) {
     padding: 25px 167px 34px 36px;
+
     @include font(20px, bold);
     line-height: 30px;
+    width: 50%;
   }
+
   @media (min-width: $desktop-width) {
     padding: 25px 350px 34px 37px;
+  }
+}
+
+.product-groups__list {
+  width: 320px;
+  height: 103px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 119px;
   }
 }
