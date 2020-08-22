@@ -1,19 +1,21 @@
 .form-tel {
-      border: none;
-      @include font(17px,bold);
-      line-height: 18px;
-      font-family: $main-font;
-      color: $black;
+  border: none;
+
+  @include font(17px,bold);
+  line-height: 18px;
+  font-family: $main-font;
+  color: $black;
     
-      @media (min-width: $tablet-width) {
-        @include font(18px,bold);
-        line-height: 19px;
-    }
+  @media (min-width: $tablet-width) {
+    @include font(18px,bold);
+    line-height: 19px;
+  }
 }
 
 .form-tel__legend {
   width: 260px;
   margin-bottom: 24px;
+
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;

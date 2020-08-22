@@ -1,43 +1,47 @@
 .page-main__title--small {
-    font-family: $main-font;
-    @include font(25px,bold);
-    line-height: 30px;
-    color: $text-color-gray;
+  font-family: $main-font;
 
-    @media (min-width: $tablet-width) {
-        @include font(45px,bold);
-        line-height: 50px;
-    }
+  @include font(25px,bold);
+  line-height: 30px;
+  color: $text-color-gray;
 
-    @media (min-width: $desktop-width) {
-        @include font(53px,bold);
-        line-height: 57px;
-    }
+  @media (min-width: $tablet-width) {
+    @include font(45px,bold);
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px,bold);
+    line-height: 57px;
+  }
 }
 
 .product-card__sale {
-    font-family: $main-font;
-    @include font(17px,bold);
-    line-height: 20px;
-    color: $icon-green;
-    width: 163px;
-    height: 20px;
+  font-family: $main-font;
 
-    @media (min-width: $tablet-width) {
-        width: 100px;
-        line-height: 17px;
-    }
+  @include font(17px,bold);
+  line-height: 20px;
+  color: $icon-green;
+  width: 163px;
+  height: 20px;
 
-    @media (min-width: $desktop-width) {
-        width: 100px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+  }
 }
+
 .product-card__text {
   display: block;
   margin: 0;
   padding: 23px 5px;
   width: 260px;
   font-family: $main-font;
+
   @include font(15px,normal);
   line-height: 24px;
   text-align: left;
@@ -47,42 +51,39 @@
     @include font(17px,normal);
     line-height: 30px;
     width: 292px;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 320px;
-    }
+  }
 }
 
 .product-card__price {
-    font-family: $main-font;
-    @include font(17px,bold);
+  font-family: $main-font;
+
+  @include font(17px,bold);
+  line-height: 24px;
+  color: $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px,bold);
     line-height: 24px;
-    color: $text-color-gray;
-
-    @media (min-width: $tablet-width) {
-        @include font(20px,bold);
-        line-height: 24px;
-        }
-
-    @media (min-width: $desktop-width) {
-        }
+  }
 }
 
 .product-card__button {
-    width: 260px;
-    margin: 0 auto;
-    padding: 15px 70px;
-    border: 2px solid $text-color-gray;
-    font-family: $main-font;
-    @include font(17px,bold);
-    line-height: 20px;
-    color: $black;
+  width: 260px;
+  margin: 0 auto;
+  padding: 15px 70px;
+  border: 2px solid $text-color-gray;
+  font-family: $main-font;
 
-    @media (min-width: $tablet-width) {
-        width: 292px;
-        padding: 14px 86px;
-        }
-    @media (min-width: $desktop-width) {
-        }
-    }
+  @include font(17px,bold);
+  line-height: 20px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    padding: 14px 86px;
+  }
+}
