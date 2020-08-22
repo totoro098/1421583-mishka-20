@@ -9,7 +9,13 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип магазина Мишка">
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
@@ -81,7 +87,15 @@
               </th>
             </tr>
           </table>
-          <div class="product-card__img"><img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки"></div>
+          <div class="product-card__img">
+            <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="top-sales__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Вязанные корзинки">
+          </picture>
+        </div>
           <p class="product-card__price">Цена: 990 руб.</p>
           <a class="product-card__button" href="#">ЗАКАЗАТЬ</a>
         </div>
