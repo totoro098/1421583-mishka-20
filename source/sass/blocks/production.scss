@@ -8,6 +8,11 @@
   padding: 15px 70px;
   border: 2px solid $text-color-gray;
 
+  @media (min-width: $tablet-width) {
+    @include font(18px, normal);
+    width: 284px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 230px;
   }

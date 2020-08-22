@@ -8,6 +8,8 @@
   line-height: 20px;
   margin: 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    @include font(20px, bold);
+    line-height: 22px;
   }
 }
