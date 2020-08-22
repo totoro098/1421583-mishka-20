@@ -5,13 +5,11 @@
   line-height: 30px;
   text-align: center;
   background-image: url("../img/hero-mobile@1x.jpg");
-
   @media (min-width: $tablet-width) {
     @include font(43px, bold);
     line-height: 50px;
     background-image: url("../img/hero-tablet@1x.jpg");
   }
-
   @media (min-width: $desktop-width) {
     @include font(53px, bold);
     line-height: 57px;
