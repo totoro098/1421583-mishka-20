@@ -1,3 +1,9 @@
+.page-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 .page-main__title {
   font-family: $main-font;
 
