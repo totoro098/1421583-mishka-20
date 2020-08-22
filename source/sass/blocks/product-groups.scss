@@ -6,6 +6,7 @@
 }
 .product-groups__item {
   font-family: $main-font;
+
   @include font(19px, bold);
   color: $main-white;
   line-height: 24px;
@@ -13,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 167px 34px 36px;
+
     @include font(20px, bold);
     line-height: 30px;
     width: 50%;
