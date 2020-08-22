@@ -12,7 +12,6 @@
     color: $main-white;
     line-height: 24px;
     padding: 25px 160px 31px 30px;
-
     @media (min-width: $tablet-width) {
         padding: 25px 167px 34px 36px;
         @include font(20px,bold);

@@ -1,5 +1,4 @@
 .contancts {
-
 }
 .contacts__button {
     width: 260px;
@@ -7,7 +6,6 @@
     @include font(18px,normal);
     color: $black;
     line-height: 20px;
-
     @media (min-width: $tablet-width) {
     @include font(18px,normal);
     }
