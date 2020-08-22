@@ -16,12 +16,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 167px 34px 36px;
-
     @include font(20px, bold);
     line-height: 30px;
     width: 50%;
   }
-
   @media (min-width: $desktop-width) {
     padding: 25px 350px 34px 37px;
   }
@@ -36,7 +34,6 @@
     width: 668px;
     height: 119px;
   }
-
   @media (min-width: $desktop-width) {
     width: 1050px;
     height: 119px;
