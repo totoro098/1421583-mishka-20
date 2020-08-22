@@ -5,7 +5,7 @@
   line-height: 18px;
   font-family: $main-font;
   color: $black;
-    
+
   @media (min-width: $tablet-width) {
     @include font(18px,bold);
     line-height: 19px;
@@ -31,7 +31,7 @@
   line-height: 18px;
   font-family: $main-font;
   color: $black;
-  
+
   @media (min-width: $tablet-width) {
     @include font(18px,bold);
     line-height: 19px;
