@@ -77,6 +77,7 @@
   padding: 15px 70px;
   border: 2px solid $text-color-gray;
   font-family: $main-font;
+  
   @include font(17px,bold);
   line-height: 20px;
   color: $black;

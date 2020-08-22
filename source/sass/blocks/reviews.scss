@@ -38,12 +38,13 @@
   @media (min-width: $tablet-width) {
     width: 668px;
   }
+  
   @media (min-width: $desktop-width) {
     width: 773px;
   }
 }
 
-.review__author--contact{
+.review__author--contact {
   font-family: $main-font;
 
   @include font(17px,bold);
@@ -56,7 +57,7 @@
   }
 }
 
-.reviews__author--name{
+.reviews__author--name {
   font-family: $main-font;
 
   @include font(17px,normal);
