@@ -1,8 +1,21 @@
+.form-full-name {
+  border: none;
+  @include font(17px, bold);
+  line-height: 18px;
+  font-family: $main-font;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, bold);
+    line-height: 19px;
+  }
+}
+
 .form-full-name__legend {
   width: 260px;
   margin-bottom: 24px;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 16px;
   text-transform: uppercase;
   color: $icon-green;
@@ -17,7 +30,7 @@
     width: 182px;
     height: 8px;
     border-bottom: 1px solid $icon-green;
-   
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -29,13 +42,13 @@
 }
 
 .form-full-name__label {
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 18px;
   font-family: $main-font;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    @include font(18px,bold);
+    @include font(18px, bold);
     line-height: 19px;
   }
 }
@@ -43,6 +56,6 @@
 .form-full-name__input {
   opacity: 0.3;
   &::placeholder {
-  border-bottom: 2px solid $black;
+    border-bottom: 2px solid $black;
   }
 }
