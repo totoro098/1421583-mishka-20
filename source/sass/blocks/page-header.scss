@@ -24,6 +24,7 @@
 
 .user-nav__link {
   font-family: $main-font;
+
   @include font(15px, bold);
   color: $black;
   line-height: 24px;
