@@ -1,0 +1,44 @@
+.page-header__toggle {
+  width: 20px;
+  height: 2px;
+  background-color: $burger-menu;
+  border-bottom: 2px solid $burger-menu;
+  box-shadow: 0 2px 0 0 $burger-menu;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-nav__list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.user-nav__item {
+  list-style: none;
+}
+
+.user-nav__link {
+  font-family: $main-font;
+
+  @include font(15px,bold);
+  color: $black;
+  line-height: 24px;
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: $main-font;
+
+    @include font(15px,normal);
+    color: $black;
+    line-height: 24px;
+  }
+}
