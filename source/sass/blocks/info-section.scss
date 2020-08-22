@@ -4,7 +4,7 @@
   @include font(17px,bold);
   color: $black;
   line-height: 20px;
-  
+
   @media (min-width: $tablet-width) {
     @include font(20px,bold);
     line-height: 22px;
