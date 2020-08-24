@@ -1,34 +1,33 @@
 .production__button-buy {
-    width: 170px;
-    font-family: $main-font;
+  width: 170px;
+  font-family: $main-font;
+
+  @include font(18px,normal);
+  color: $black;
+  line-height: 20px;
+  padding: 15px 70px;
+  border: 2px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
     @include font(18px,normal);
-    color: $black;
-    line-height: 20px;
-    padding: 15px 70px;
-    border: 2px solid $text-color-gray;
+    width: 284px;
+  }
 
-    @media (min-width: $tablet-width) {
-        @include font(18px,normal);
-        width: 284px;
-    }
-
-    @media (min-width: $desktop-width) {
-        width: 230px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
 }
 
 .production__text {
-    font-family: $main-font;
-    @include font(13px,normal);
-    color: $black;
+  font-family: $main-font;
+
+  @include font(13px,normal);
+  color: $black;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(15px,normal);
     line-height: 30px;
-    margin: 0;
-
-    @media (min-width: $tablet-width) {
-        @include font(15px,normal);
-        line-height: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-    }
+  }
 }
