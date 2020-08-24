@@ -3,11 +3,11 @@
   width: 260px;
   font-family: $main-font;
 
-  @include font(15px,normal);
+  @include font(15px, normal);
   color: $black;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    @include font(17px,normal);
+    @include font(17px, normal);
   }
 }
