@@ -13,7 +13,7 @@
 .copyright__text {
   font-family: $main-font;
 
-  @include font(19px,bold);
+  @include font(19px, bold);
   color: $black;
   line-height: 18px;
 }

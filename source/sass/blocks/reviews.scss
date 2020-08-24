@@ -18,7 +18,7 @@
   border: 2px solid $text-color-gray;
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 20px;
   color: $black;
 
@@ -31,7 +31,7 @@
   width: 260px;
   font-family: $main-font;
 
-  @include font(15px,bold);
+  @include font(15px, bold);
   color: $black;
   line-height: 30px;
 
@@ -47,12 +47,12 @@
 .review__author--contact {
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   color: $black;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    @include font(18px,bold);
+    @include font(18px, bold);
     line-height: 24px;
   }
 }
@@ -60,12 +60,12 @@
 .reviews__author--name {
   font-family: $main-font;
 
-  @include font(17px,normal);
+  @include font(17px, normal);
   color: $black;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    @include font(18px,normal);
+    @include font(18px, normal);
     line-height: 24px;
   }
 }

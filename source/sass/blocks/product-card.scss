@@ -1,17 +1,17 @@
 .page-main__title--small {
   font-family: $main-font;
 
-  @include font(25px,bold);
+  @include font(25px, bold);
   line-height: 30px;
   color: $text-color-gray;
 
   @media (min-width: $tablet-width) {
-    @include font(45px,bold);
+    @include font(45px, bold);
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    @include font(53px,bold);
+    @include font(53px, bold);
     line-height: 57px;
   }
 }
@@ -19,7 +19,7 @@
 .product-card__sale {
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 20px;
   color: $icon-green;
   width: 163px;
@@ -42,13 +42,13 @@
   width: 260px;
   font-family: $main-font;
 
-  @include font(15px,normal);
+  @include font(15px, normal);
   line-height: 24px;
   text-align: left;
   color: $text-color-gray;
 
   @media (min-width: $tablet-width) {
-    @include font(17px,normal);
+    @include font(17px, normal);
     line-height: 30px;
     width: 292px;
   }
@@ -61,12 +61,12 @@
 .product-card__price {
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 24px;
   color: $text-color-gray;
 
   @media (min-width: $tablet-width) {
-    @include font(20px,bold);
+    @include font(20px, bold);
     line-height: 24px;
   }
 }
@@ -78,7 +78,7 @@
   border: 2px solid $text-color-gray;
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   line-height: 20px;
   color: $black;
 

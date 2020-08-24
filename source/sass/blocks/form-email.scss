@@ -1,14 +1,8 @@
 .form-email {
-  border: none;
-
-  @include font(17px,bold);
-  line-height: 18px;
-  font-family: $main-font;
-  color: $black;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    @include font(18px,bold);
-    line-height: 19px;
+    background-color: $footer-color;
   }
 }
 
@@ -24,6 +18,22 @@
   @media (min-width: $tablet-width) {
     margin-top: 22px;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 182px;
+    height: 8px;
+    border-bottom: 1px solid $icon-green;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 22px;
+  }
 }
 
 .form-email__label {
@@ -35,5 +45,13 @@
   @media (min-width: $tablet-width) {
     @include font(18px,bold);
     line-height: 19px;
+  }
+}
+
+.form-email__input {
+  opacity: 0.3;
+
+  &::placeholder {
+    border-bottom: 2px solid $black;
   }
 }

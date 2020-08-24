@@ -1,8 +1,9 @@
 .advantages-list__item {
   list-style: none;
   font-family: $main-font;
+  position: relative;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   color: $black;
   width: 260px;
   line-height: 20px;
@@ -10,7 +11,7 @@
   padding: 35px 0 27px;
 
   @media (min-width: $tablet-width) {
-    @include font(20px,bold);
+    @include font(20px, bold);
     line-height: 22px;
     width: 235px;
     padding: 65px 0 40px;
@@ -19,5 +20,38 @@
   @media (min-width: $desktop-width) {
     width: 235px;
     padding: 35px 10px 40px 0;
+  }
+
+  &--eco::before {
+    content: url("../img/icon-feature-flower.svg");
+    position: absolute;
+    left:-45px;
+  }
+
+  &--style::before {
+    content: url("../img/icon-feature-money.svg");
+    position: absolute;
+    left:-45px;
+  }
+
+  &--likes::before {
+    content: url("../img/icon-feature-heart.svg");
+    position: absolute;
+    left:-45px;
+  }
+  &--handmade::before {
+    content: url("../img/icon-feature-ball.svg");
+    position: absolute;
+    left:-45px;
+  }
+  &--native::before {
+    content: url("../img/icon-feature-rocket.svg");
+    position: absolute;
+    left:-45px;
+}
+  &--box::before {
+    content: url("../img/icon-feature-gift.svg");
+    position: absolute;
+    left:-45px;
   }
 }
