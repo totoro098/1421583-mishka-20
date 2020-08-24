@@ -1,0 +1,19 @@
+.page-footer {
+  background-color: $footer-color;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.copyright__text {
+  font-family: $main-font;
+
+  @include font(19px,bold);
+  color: $black;
+  line-height: 18px;
+}

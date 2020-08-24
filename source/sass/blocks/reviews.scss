@@ -1,0 +1,93 @@
+.reviews {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__write {
+  width: 260px;
+  padding: 15px 70px;
+  border: 2px solid $text-color-gray;
+  font-family: $main-font;
+
+  @include font(17px,bold);
+  line-height: 20px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+  }
+}
+
+.reviews__text {
+  width: 260px;
+  font-family: $main-font;
+
+  @include font(15px,bold);
+  color: $black;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 773px;
+  }
+}
+
+.review__author--contact {
+  font-family: $main-font;
+
+  @include font(17px,bold);
+  color: $black;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px,bold);
+    line-height: 24px;
+  }
+}
+
+.reviews__author--name {
+  font-family: $main-font;
+
+  @include font(17px,normal);
+  color: $black;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px,normal);
+    line-height: 24px;
+  }
+}
+
+.reviews__prev {
+  background: url("../img/icon-left-arrow.svg") no-repeat 50%;
+  width: 129px;
+  min-height: 51px;
+  border: 1px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.reviews__next {
+  background: url("../img/icon-right-arrow.svg") no-repeat 50%;
+  width: 129px;
+  min-height: 51px;
+  border: 1px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
