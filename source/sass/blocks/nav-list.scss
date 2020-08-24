@@ -5,17 +5,17 @@
 .nav-list__link {
   font-family: $main-font;
 
-  @include font(17px,bold);
+  @include font(17px, bold);
   color: $black;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    @include font(15px,bold);
+    @include font(15px, bold);
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    @include font(17px,bold);
+    @include font(17px, bold);
     line-height: 24px;
   }
 }
