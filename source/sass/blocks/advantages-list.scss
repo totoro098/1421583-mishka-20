@@ -22,39 +22,39 @@
     padding: 35px 10px 40px 0;
   }
 
-  &--eco::before{
+  &--eco::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-flower.svg");
   }
 
-  &--style::before{
+  &--style::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-money.svg");
   }
 
-  &--likes::before{
+  &--likes::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-heart.svg");
   }
 
-  &--handmade::before{
+  &--handmade::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-ball.svg");
   }
 
-  &--native::before{
+  &--native::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-rocket.svg");
   }
 
-  &--box::before{
+  &--box::before {
     position: absolute;
-    left:-45px;
+    left: -45px;
     content: url("../img/icon-feature-gift.svg");
   }
 }
