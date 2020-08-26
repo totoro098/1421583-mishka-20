@@ -1,41 +1,53 @@
 .page-header__toggle {
-    width: 20px;
-    height: 2px;
-    background-color: $burger-menu;
-    border-bottom: 2px solid $burger-menu;
-    box-shadow: 0 2px 0 0 $burger-menu;
+  width: 20px;
+  height: 2px;
+  background-color: $burger-menu;
+  border-bottom: 2px solid $burger-menu;
+  box-shadow: 0 2px 0 0 $burger-menu;
 
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-}
-.user-nav__list {
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+.page-header__logo {
+  border:1px solid gray;
+  display: block;
+  width: 86px;
+  height: 35px;
 
-    @media (min-width: $desktop-width) {
-        display: block;
-    }
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
-.user-nav__item {
-    list-style: none;
+.page-header__wrapper {
+  border:1px solid yellow;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 22px 30px 22px 27px;
+  border-bottom: 1px solid $shadow-gray;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 19px;
+  }
 }
 
-.user-nav__link {
-    font-family: $main-font;
-    @include font(15px,bold);
-    color: $black;
-    line-height: 24px;
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.main-nav__text {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-        display: block;
-        font-family: $main-font;
-        @include font(15px,normal);
-        color: $black;
-        line-height: 24px;
-    }
-}

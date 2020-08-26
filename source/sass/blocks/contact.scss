@@ -1,12 +1,13 @@
 .contacts__title,
 .contact__value {
-    width: 260px;
-    font-family: $main-font;
-    @include font(15px,normal);
-    color: $black;
-    line-height: 30px;
+  width: 260px;
+  font-family: $main-font;
 
-    @media (min-width: $tablet-width) {
-        @include font(17px,normal);
-    }
+  @include font(15px, normal);
+  color: $black;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, normal);
+  }
 }

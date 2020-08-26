@@ -1,20 +1,56 @@
 .order-text {
-    font-family: $main-font;
-    @include font(13px,bold);
-    color: $black;
-    line-height: 24px;
-    width: 260px;
-    padding: 15px 0;
+  font-family: $main-font;
 
-    @media (min-width: $tablet-width) {
-        @include font(17px,bold);
-        line-height: 30px;
-        width: 668px;
-        padding: 20px 0;
-    }
-    @media (min-width: $desktop-width) {
-        width: 790px;
-        padding-left: 116px;
-        padding-top: 70px;
-    }
+  @include font(13px,bold);
+  color: $black;
+  line-height: 24px;
+  width: 260px;
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px,bold);
+    line-height: 30px;
+    width: 668px;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 790px;
+    padding-left: 116px;
+    padding-top: 70px;
+  }
+}
+
+.order-form__fieldset {
+  border: none;
+
+  @include font(17px,bold);
+  line-height: 18px;
+  font-family: $main-font;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px,bold);
+    line-height: 19px;
+  }
+
+  & input {
+    border: none;
+  }
+}
+
+.order-form__button {
+  width: 260px;
+  font-family: $main-font;
+  background-color: inherit;
+
+  @include font(18px,normal);
+  color: $black;
+  line-height: 20px;
+  padding: 18px;
+  border: 2px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px,normal);
+  }
 }

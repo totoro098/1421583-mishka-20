@@ -1,26 +1,35 @@
-.form-color__legend {
-      border: none;
-      @include font(17px,bold);
-      line-height: 18px;
-      font-family: $main-font;
-      color: $black;
-    
-      @media (min-width: $tablet-width) {
-        @include font(18px,bold);
-        line-height: 19px;
-    }
+.form-color {
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    background-color: $footer-color;
+  }
 }
 
 .form-color__legend {
+  position: relative;
   width: 260px;
   margin-bottom: 24px;
+
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
   color: $icon-green;
 
+  &::after {
+    display: block;
+    content: "";
+    width: 182px;
+    height: 8px;
+    border-bottom: 1px solid $icon-green;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
+    margin: 22px;
   }
 }
 
@@ -29,7 +38,7 @@
   line-height: 18px;
   font-family: $main-font;
   color: $black;
-  
+
   @media (min-width: $tablet-width) {
     @include font(18px,bold);
     line-height: 19px;
