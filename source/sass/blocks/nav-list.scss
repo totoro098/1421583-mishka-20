@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
-  border:1px solid red;
+  border: 1px solid red;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,9 +14,10 @@
     flex-direction: row;
     width: 398px;
   }
-    @media (min-width: $desktop-width) {
-      flex-direction: row;
-      order: 2;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    order: 2;
   }
 }
 
@@ -62,7 +63,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width:84px;
+    width: 84px;
     border-left: 1px solid $shadow-gray;
   }
 }

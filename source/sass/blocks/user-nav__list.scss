@@ -8,12 +8,12 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    border:1px solid green;
+    border: 1px solid green;
     width: 506px;
   }
 
   @media (min-width: $desktop-width) {
-  order: 3;
+    order: 3;
   }
 }
 

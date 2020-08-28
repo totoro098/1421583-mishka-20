@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
@@ -37,6 +38,7 @@
 
 .form-color__label {
   border: 1px solid green;
+
   @include font(17px,bold);
   line-height: 18px;
   font-family: $main-font;
@@ -49,6 +51,6 @@
 }
 
 .form-color__input {
-border: 1px solid green;
+  border: 1px solid green;
   width: 80%;
 }
