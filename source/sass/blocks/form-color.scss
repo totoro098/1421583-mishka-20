@@ -11,8 +11,8 @@
   width: 260px;
   margin-bottom: 24px;
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
