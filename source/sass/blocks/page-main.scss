@@ -57,13 +57,34 @@
   margin: 0 auto;
   margin-left: 50px;
   margin-right: 50px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     height: 238px;
+    width: 668px;
   }
 
   @media (min-width: $desktop-width) {
     height: 272px;
+    width: 1050px;
+  }
+}
+
+.page-main__title--small {
+  font-family: $main-font;
+
+  @include font(25px, bold);
+  line-height: 30px;
+  color: $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    @include font(45px, bold);
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, bold);
+    line-height: 57px;
   }
 }
 

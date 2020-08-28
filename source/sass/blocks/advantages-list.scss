@@ -1,5 +1,6 @@
 .advantages-list {
   display: grid;
+  position: relative;
   width: 260px;
 
   @media (min-width: $tablet-width) {
@@ -9,14 +10,38 @@
     column-gap: 90px;
     row-gap: 60px;
   }
+
   @media (min-width: $desktop-width) {
     width: 715px;
     column-gap: 115px;
     padding-left: 225px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 15px;
+      top: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 21px;
+      bottom: 350px;
+      left: 0;
+    }
+  }
 }
 
-.advantages-list__item{
+.advantages-list__item {
   list-style: none;
   font-family: $main-font;
   position: relative;
@@ -59,7 +84,7 @@
     position: absolute;
     bottom: 75px;
     content: url("../img/icon-feature-heart.svg");
- 
+
     @media (min-width: $tablet-width) {
       bottom: 55px;
     }
@@ -79,7 +104,7 @@
     position: absolute;
     bottom: 75px;
     content: url("../img/icon-feature-rocket.svg");
-  
+
     @media (min-width: $tablet-width) {
       bottom: 55px;
     }
@@ -89,7 +114,7 @@
     position: absolute;
     bottom: 75px;
     content: url("../img/icon-feature-gift.svg");
-  
+
     @media (min-width: $tablet-width) {
       bottom: 55px;
     }

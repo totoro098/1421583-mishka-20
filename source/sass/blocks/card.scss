@@ -21,3 +21,9 @@
     line-height: 24px;
   }
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -1,7 +1,27 @@
 .page-footer {
+  min-height: 160px;
+  box-sizing: border-box;
+  width: 100%
   background-color: $footer-color;
 }
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 668px;
+    margin: 37px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 32px auto;
+  }
+}
+.page-footer__social{
+  border: 1px solid red;
+  width: 100px;
+}
 .page-footer__logo {
   display: none;
 

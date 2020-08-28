@@ -6,10 +6,15 @@
   flex-wrap: wrap;
   width: 100%;
   border:1px solid green;
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 .main-nav__text {

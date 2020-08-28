@@ -10,7 +10,9 @@
   position: relative;
   width: 260px;
   margin-bottom: 24px;
-
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
@@ -34,6 +36,7 @@
 }
 
 .form-color__label {
+  border: 1px solid green;
   @include font(17px,bold);
   line-height: 18px;
   font-family: $main-font;
@@ -43,4 +46,8 @@
     @include font(18px,bold);
     line-height: 19px;
   }
+}
+.form-color__input {
+border: 1px solid green;
+  width: 80%;
 }

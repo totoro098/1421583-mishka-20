@@ -1,0 +1,32 @@
+.product-specification {
+  @include font(15px, normal);
+  line-height: 20px;
+  width: 260px;
+  box-sizing: border-box;
+  padding-top: 25px;
+  color: $text-color-gray;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 291px;
+  }
+}
+
+.product-specification__title {
+  @include font(15px, normal);
+  line-height: 20px;
+  width: 97px;
+}
+
+.product-specification__value {
+  @include font(15px, normal);
+  line-height: 20px;
+}
+
+.product-specification__row {
+  @include font(15px, normal);
+  line-height: 20px;
+  border-bottom: 1px solid $text-color-gray;
+  text-align: left;
+}

@@ -11,10 +11,12 @@
     border:1px solid green;
     width: 506px;
   }
+
   @media (min-width: $desktop-width) {
   order: 3;
   }
 }
+
 .user-nav__link {
   display: block;
   width: 185px;

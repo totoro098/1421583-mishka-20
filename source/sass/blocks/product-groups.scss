@@ -20,7 +20,6 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-
     @include font(20px, bold);
     line-height: 30px;
     flex-grow: 1;
