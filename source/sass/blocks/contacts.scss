@@ -70,7 +70,8 @@
   }
 
   @media (min-width: $desktop-width) {
-  margin-left: 100px;
+    margin-left: 100px;
+    
     &::after {
       position: absolute;
       content: "";
