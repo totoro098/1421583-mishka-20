@@ -1,5 +1,4 @@
 .product-card__sale {
-  border: 1px solid red;
   font-family: $main-font;
   margin: 0;
 
@@ -22,7 +21,6 @@
 
 .product-card__title {
   margin: 0;
-  border: 1 px solid green;
 
   @media (min-width: $desktop-width) {
     order: 1;
@@ -33,11 +31,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border: 1px solid greenyellow;
 }
 
 .product-card {
-  border: 1px solid pink;
   width: 320px;
   margin: 0 auto;
 
@@ -109,7 +105,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid gray;
   min-height: 415px;
 
   @media (min-width: $desktop-width) {
@@ -124,8 +119,6 @@
 }
 
 .product-card__img {
-  border: 1px solid red;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
