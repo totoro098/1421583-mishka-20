@@ -24,6 +24,10 @@
   min-height: 80px;
   margin: 0 auto;
   border-bottom: 1px solid $text-color-gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2 px solid red
 
   @media (min-width: $tablet-width) {
     border: none;

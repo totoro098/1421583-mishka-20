@@ -20,6 +20,8 @@
 
 .production__text {
   font-family: $main-font;
+  width: 194px;
+  padding: 16px 34px 28px 34px;
 
   @include font(13px, normal);
   color: $black;
@@ -29,5 +31,50 @@
   @media (min-width: $tablet-width) {
     @include font(15px, normal);
     line-height: 30px;
+    width: 600px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
+}
+
+.production {
+  width: 100%;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+.production__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 77px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/icon-play.svg");
+}
+
+.production__video {
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 743px;
+  }
+
+  @media (min-width: $desktop-width) {
+  width: 1050px;
+  height: 455px;
   }
 }

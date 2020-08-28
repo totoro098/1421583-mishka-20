@@ -1,8 +1,13 @@
 .form-color {
   background-color: inherit;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-color: $footer-color;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
