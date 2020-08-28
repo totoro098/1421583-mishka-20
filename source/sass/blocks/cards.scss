@@ -18,7 +18,6 @@
 .cards__item {
   list-style: none;
   font-family: $main-font;
-  border: 1px solid green;
 
   @include font(17px, bold);
   color: $black;
@@ -26,11 +25,13 @@
 }
 
 .cards__list {
+  padding: 0;
   display: grid;
   column-gap: 52px;
   grid-template-rows: 1fr 1fr 1fr;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    max-height: 659px;
   }
 }

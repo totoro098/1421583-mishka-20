@@ -14,7 +14,6 @@
 }
 
 .contacts {
-  border: 1px solid pink;
   width: 320px;
   margin: 0 auto;
   position: relative;
@@ -55,32 +54,34 @@
   }
 }
 
-.contacts__info {
-  @include font(15px, normal);
-  line-height: 20px;
-  width: 260px;
-  box-sizing: border-box;
-  padding-top: 25px;
-  color: $text-color-gray;
-  border-collapse: collapse;
-  border-spacing: 0;
-
-  @media (min-width: $desktop-width) {
-    width: 291px;
-  }
-}
-
 .contacts__title--main {
   position: relative;
-  border: 3px solid green;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 47px;
-    height: 81px;
-    background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      top: 0px;
+      right: 3px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      top: 0px;
+      left: 3px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }

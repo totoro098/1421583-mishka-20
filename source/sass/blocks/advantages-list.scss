@@ -35,7 +35,7 @@
     @media (min-width: $desktop-width) {
       width: 1050px;
       height: 21px;
-      bottom: 350px;
+      top: -160px;
       left: 0;
     }
   }
@@ -46,7 +46,6 @@
   font-family: $main-font;
   position: relative;
   width: 100%;
-  border: 1px solid green;
 
   @include font(17px, bold);
   color: $black;

@@ -27,3 +27,19 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.card__img {
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    height: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 465px;
+  }
+}
+
+.card__order {
+  min-width: 200px;
+}

@@ -8,7 +8,6 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    border: 1px solid green;
     width: 506px;
   }
 
@@ -22,7 +21,6 @@
   width: 185px;
   box-sizing: border-box;
   margin-right: 35px;
-  border: 1px solid pink;
 
   @include font(15px, bold);
   color: $black;

@@ -1,6 +1,5 @@
-.contacts__title,
+.contact__title,
 .contact__value {
-  width: 260px;
   font-family: $main-font;
 
   @include font(15px, normal);
@@ -12,8 +11,39 @@
   }
 }
 
-tbody {
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.contacts__info tbody {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+  }
+}
+
+.contacts__info {
+  @include font(15px, normal);
+  line-height: 20px;
+  width: 260px;
+  box-sizing: border-box;
+  padding-top: 25px;
+  color: $text-color-gray;
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 320px;
+  }
+}
+
+.contact__title {
+  width: 75px;
+}
+
+.contact__row {
+  min-width: 300px;
 }

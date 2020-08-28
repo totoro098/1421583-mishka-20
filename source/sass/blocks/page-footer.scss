@@ -3,7 +3,6 @@
   box-sizing: border-box;
   width: 100%;
   background-color: $footer-color;
-}
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,6 +10,7 @@
     justify-content: space-between;
     width: 668px;
     margin: 37px auto;
+    min-height: 143px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +20,18 @@
 }
 
 .page-footer__social{
-  border: 1px solid red;
-  width: 100px;
+  width: 260px;
+  min-height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+  }
 }
 
 .page-footer__logo {
@@ -29,6 +39,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 144px;
   }
 }
 
@@ -38,4 +54,10 @@
   @include font(19px, bold);
   color: $black;
   line-height: 18px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 190px;
+  }
 }
