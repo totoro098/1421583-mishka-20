@@ -27,14 +27,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2 px solid red;
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: 145px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 130px;
+    border: 2 px solid red;
   }
 }
 
