@@ -1,3 +1,15 @@
+.form-full-name {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
 .form-full-name__legend {
   width: 260px;
   margin-bottom: 24px;

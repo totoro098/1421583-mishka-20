@@ -22,6 +22,10 @@
   @include font(17px, bold);
   color: $black;
   line-height: 20px;
+  
+  @media (min-width: $tablet-width) {
+    max-height: 340px;
+  }
 }
 
 .cards__list {
