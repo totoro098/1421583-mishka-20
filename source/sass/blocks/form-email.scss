@@ -70,11 +70,13 @@
       line-height: 19px;
     }
   }
+
   @media (min-width: $tablet-width) {
     width: 500px;
     min-height: 36px;
     flex-grow: 1;
   }
+
   @media (min-width: $desktop-width) {
     width: 700px;
   }

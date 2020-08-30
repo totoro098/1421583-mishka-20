@@ -1,10 +1,8 @@
 .social__item {
   list-style: none;
-  border: 2 px solid red;
 }
 
 .social__list {
-  border: 2 px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
@@ -16,7 +14,7 @@
   margin: 0 auto;
   border-bottom: 1px solid $text-color-gray;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -27,4 +25,3 @@
     border: 2 px solid red;
   }
 }
-
