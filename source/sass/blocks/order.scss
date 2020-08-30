@@ -47,7 +47,7 @@
   @include font(18px,normal);
   color: $black;
   line-height: 20px;
-  padding: 18px 0px 18px 20px;
+  padding: 18px 2px 18px 20px;
   border: 2px solid $text-color-gray;
 
   @media (min-width: $tablet-width) {
@@ -55,6 +55,7 @@
     width: 230px;
   }
 }
+
 .order-form__text {
   width: 260px;
   margin: 0 auto;

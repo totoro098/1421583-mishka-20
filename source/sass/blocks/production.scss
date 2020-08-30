@@ -80,8 +80,8 @@
 
 .production__wrapper {
   @media (min-width: $tablet-width) {
-  width: 600px;
-}
+    width: 600px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 300px;
@@ -90,6 +90,7 @@
 
 .production__video {
   width: 100%;
+
   @media (min-width: $tablet-width) {
     width: 600px;
   }

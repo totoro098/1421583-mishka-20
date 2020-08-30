@@ -16,7 +16,7 @@
   }
 }
 
-.form-color__list{
+.form-color__list {
   width: 100%;
   padding: 0;
 
@@ -36,6 +36,7 @@
 
 .form-color__item {
   list-style: none;
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
@@ -95,6 +96,5 @@
     @include font(18px,bold);
     line-height: 19px;
     padding: 15px 20px 0px 82px;
-
   }
 }
