@@ -19,25 +19,6 @@
   }
 }
 
-.page-footer__social {
-  width: 260px;
-  min-height: 80px;
-  margin: 0 auto;
-  border-bottom: 1px solid $text-color-gray;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    width: 145px;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: 2 px solid red;
-  }
-}
-
 .page-footer__logo {
   display: none;
 

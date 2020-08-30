@@ -1,9 +1,14 @@
 .form-color {
   background-color: inherit;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    background-color: $footer-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,23 +16,56 @@
   }
 }
 
-.form-color__legend {
-  position: relative;
-  width: 260px;
+.form-color__list{
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
+    width: 850px;
+  }
+}
+
+.form-color__item {
+  list-style: none;
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+  }
+}
+
+.form-color__title {
+  width: 100%;
   margin-bottom: 24px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 
   @include font(17px,bold);
   line-height: 16px;
   text-transform: uppercase;
   color: $icon-green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    width:100px;
+  }
 
   &::after {
     display: block;
     content: "";
-    width: 182px;
+    width: 270px;
     height: 8px;
     border-bottom: 1px solid $icon-green;
 
@@ -43,6 +81,10 @@
 
 .form-color__label {
   border: 1px solid green;
+  position: relative;
+  display: block;
+  padding: 12px 30px 12px 60px;
+  cursor: pointer;
 
   @include font(17px,bold);
   line-height: 18px;
@@ -52,10 +94,7 @@
   @media (min-width: $tablet-width) {
     @include font(18px,bold);
     line-height: 19px;
-  }
-}
+    padding: 15px 20px 0px 82px;
 
-.form-color__input {
-  border: 1px solid green;
-  width: 80%;
+  }
 }

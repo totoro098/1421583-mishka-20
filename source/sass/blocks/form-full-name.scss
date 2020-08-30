@@ -1,5 +1,10 @@
 .form-full-name {
+  background-color: inherit;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -10,8 +15,26 @@
   }
 }
 
-.form-full-name__legend {
-  width: 260px;
+.form-full-name__list {
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+  }
+}
+
+.form-full-name__item {
+  list-style: none;
+}
+
+
+.form-full-name__title {
+  width: 100%;
   margin-bottom: 24px;
 
   @include font(17px,bold);
@@ -21,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
+    width: 100px;
   }
 
   &::after {
@@ -54,8 +78,44 @@
 
 .form-full-name__input {
   opacity: 0.3;
+  width: 100%;
+  min-height: 48px;
+  border-bottom: 2px solid $black;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
 
   &::placeholder {
     border-bottom: 2px solid $black;
+
+    @include font(17px,bold);
+    line-height: 18px;
+    font-family: $main-font;
+    color: $black;
+
+    @media (min-width: $tablet-width) {
+      @include font(18px,bold);
+      line-height: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    min-height: 36px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
+}
+
+.form-full-name__input:first-child {
+    width: 413px;
+    min-height: 36px;
+    flex-grow: 1;
+  
+  @media (min-width: $desktop-width) {
+    width: 680px;
   }
 }

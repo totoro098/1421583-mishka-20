@@ -41,6 +41,7 @@
 
 .production {
   width: 100%;
+  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -49,9 +50,16 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
   }
 }
 
+.page-main__title--catalog{
+  width: 100%;
+}
 .production__button {
   position: absolute;
   top: 50%;
@@ -67,17 +75,23 @@
   background-position: center;
   background-image: url("../img/icon-play.svg");
 }
-
-.production__video {
-  margin: auto;
+.production__wrapper {
 
   @media (min-width: $tablet-width) {
-    width: 668px;
-    height: 743px;
-  }
+  width: 600px;
+}
 
+@media (min-width: $desktop-width) {
+  width: 300px;
+}
+}
+.production__video {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+  }
+  
   @media (min-width: $desktop-width) {
-    width: 1050px;
-    height: 455px;
+    width: 600px;
   }
 }

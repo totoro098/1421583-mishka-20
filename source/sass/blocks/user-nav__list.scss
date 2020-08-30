@@ -1,17 +1,17 @@
 .user-nav__list {
   display: none;
-  width: 500px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 506px;
-  }
-
-  @media (min-width: $desktop-width) {
     order: 3;
   }
 }
