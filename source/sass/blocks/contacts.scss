@@ -12,3 +12,75 @@
     @include font(18px, normal);
   }
 }
+
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, bold);
+    line-height: 22px;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, bold);
+    line-height: 22px;
+    width: 1050px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 21px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.contacts__title--main {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      right: 3px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      right: 100%;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

@@ -10,35 +10,42 @@
   }
 }
 
-.user-nav__list {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.user-nav__item {
-  list-style: none;
-}
-
-.user-nav__link {
-  font-family: $main-font;
-
-  @include font(15px, bold);
-  color: $black;
-  line-height: 24px;
-}
-
-.main-nav__text {
-  display: none;
+.page-header__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    font-family: $main-font;
-
-    @include font(15px, normal);
-    color: $black;
-    line-height: 24px;
+    width: 113px;
+    height: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 22px 30px 22px 27px;
+  border-bottom: 1px solid $shadow-gray;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 19px;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
 }

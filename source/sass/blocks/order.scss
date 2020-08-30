@@ -23,6 +23,9 @@
 
 .order-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @include font(17px,bold);
   line-height: 18px;

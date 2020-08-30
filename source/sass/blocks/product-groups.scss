@@ -8,33 +8,43 @@
 
 .product-groups__item {
   font-family: $main-font;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
 
   @include font(19px, bold);
   color: $main-white;
   line-height: 24px;
-  padding: 25px 160px 31px 30px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 167px 34px 36px;
-
     @include font(20px, bold);
     line-height: 30px;
-    width: 50%;
+    flex-grow: 1;
+    width: 45%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 350px 34px 37px;
+    flex-grow: 1;
+    width: 45%;
   }
 }
 
 .product-groups__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 320px;
   height: 103px;
   margin: 0 auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 119px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   @media (min-width: $desktop-width) {

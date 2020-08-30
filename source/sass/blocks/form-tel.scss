@@ -1,8 +1,14 @@
 .form-tel {
   background-color: inherit;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: 668px;
     background-color: $footer-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 

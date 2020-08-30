@@ -21,3 +21,31 @@
     line-height: 24px;
   }
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.card__img {
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    height: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 465px;
+  }
+}
+
+.card__order {
+  min-width: 200px;
+}
+
+.card__info {
+  min-width: 200px;
+  max-width: 340px;
+}
