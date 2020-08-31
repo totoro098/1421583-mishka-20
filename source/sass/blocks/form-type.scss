@@ -1,6 +1,10 @@
 .form-type {
   background-color: inherit;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -11,8 +15,26 @@
   }
 }
 
-.form-type__legend {
-  width: 260px;
+.form-type__list {
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+  }
+}
+
+.form-type__item {
+  list-style: none;
+}
+
+.form-type__title {
+  width: 100%;
+
   margin-bottom: 24px;
 
   @include font(17px,bold);
@@ -25,12 +47,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
+    width: 100px;
   }
 
   &::after {
     display: block;
     content: "";
-    width: 182px;
+    width: 270px;
     height: 8px;
     border-bottom: 1px solid $icon-green;
 
@@ -49,8 +72,14 @@
   line-height: 18px;
   font-family: $main-font;
   color: $black;
+  position: relative;
+  display: block;
+  padding: 12px 30px 12px 60px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding: 20px 30px 12px 1px;
+
     @include font(18px,bold);
     line-height: 19px;
   }

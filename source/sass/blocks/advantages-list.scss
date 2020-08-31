@@ -61,6 +61,7 @@
   &--eco::before {
     position: absolute;
     bottom: 75px;
+    fill: $icon-green;
     content: url("../img/icon-feature-flower.svg");
 
     @media (min-width: $tablet-width) {
@@ -71,6 +72,7 @@
   &--style::before {
     position: absolute;
     bottom: 75px;
+    fill: $icon-green;
     content: url("../img/icon-feature-money.svg");
 
     @media (min-width: $tablet-width) {
@@ -81,6 +83,7 @@
   &--likes::before {
     position: absolute;
     bottom: 75px;
+    fill: $icon-green;
     content: url("../img/icon-feature-heart.svg");
 
     @media (min-width: $tablet-width) {
@@ -91,6 +94,7 @@
   &--handmade::before {
     position: absolute;
     bottom: 75px;
+    fill: $icon-green;
     content: url("../img/icon-feature-ball.svg");
 
     @media (min-width: $tablet-width) {
@@ -101,6 +105,7 @@
   &--native::before {
     position: absolute;
     bottom: 75px;
+    fill: $icon-green;
     content: url("../img/icon-feature-rocket.svg");
 
     @media (min-width: $tablet-width) {
@@ -110,7 +115,8 @@
 
   &--box::before {
     position: absolute;
-    bottom: 75px;
+    bottom: 40px;
+    fill: $icon-green;
     content: url("../img/icon-feature-gift.svg");
 
     @media (min-width: $tablet-width) {

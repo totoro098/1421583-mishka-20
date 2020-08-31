@@ -1,0 +1,98 @@
+.pop-up {
+  display: none;
+  text-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+
+  width: 320px;
+  min-height: 336px;
+  padding: 10px;
+
+  transform: translate(-50%, -50%);
+  background-color: $main-white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
+}
+
+.pop-up__title {
+  @include font(25px, bold);
+  color: $black;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font(30px, bold);
+    line-height: 57px;
+  }
+}
+
+.pop-up__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  text-align: center;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-left: 90px;
+  }
+}
+
+.size__item {
+  list-style: none;
+}
+
+.size__input {
+  display: none;
+}
+
+.size__label {
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding: 18px 10px;
+  box-sizing: border-box;
+
+  @include font(17px, bold);
+  line-height: 16px;
+  border: 2px solid rgba($text-color-gray, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.pop-up__text {
+  @include font(15px, bold);
+  color: $black;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, bold);
+    line-height: 30px;
+  }
+}
+
+.size-form__button {
+  width: 100%;
+  margin-bottom: auto;
+
+  @include font(18px, normal);
+  color: $black;
+  line-height: 20px;
+  padding: 15px 70px;
+  border: 2px solid $text-color-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}

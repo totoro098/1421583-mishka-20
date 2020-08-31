@@ -481,25 +481,30 @@
           <img class="video__content" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
             alt="Видео о производстве товаров">
         </picture>
+        <button class="production__button" type="button"><span class="visually-hidden">Воспроизведение видео</span></button>
       </div>
-      <button class="production__button" type="button"><span class="visually-hidden">Воспроизведение видео</span></button>
-      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="production__button-buy" href="#">Сделать заказ</a>
+      <div class="production__wrapper">
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button-buy" href="#">Сделать заказ</a>
+      </div>
     </section>
-    <div class="pop-up visually-hidden">
+    <div class="pop-up">
       <h2 class="pop-up__title">Добавить в корзину</h2>
       <p class="pop-up__text">Выберите размер:</p>
       <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
         <ul class="pop-up__list size">
-        <li class="size__item">
-          <label class="size__label"><input class="size_input" type="radio" name="size" value="small">S</label>
-        </li>
-        <li class="size__item">
-          <label class="size__label"><input class="size_input" type="radio" name="size" value="middle">M</label>
-        </li>
-        <li class="size__item">
-          <label class="size__label"><input class="size_input" type="radio" name="size" value="large">L</label>
-        </li>
+          <li class="size__item">
+            <input class="size_input" type="radio" name="size" value="small" id="size-s">
+            <label class="size__label" for="size-s">S</label>
+          </li>
+          <li class="size__item">
+            <input class="size_input" type="radio" name="size" value="middle" for="size-m">
+            <label class="size__label" id="size-m">M</label>
+          </li>
+          <li class="size__item">
+            <input class="size_input" type="radio" name="size" value="large" for="size-l">
+            <label class="size__label" id="size-l">L</label>
+          </li>
         </ul>
         <button class="size-form__button" type="submit">Добавить</button>
         </form>

@@ -50,13 +50,22 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
   }
+}
+
+.page-main__title--catalog {
+  width: 100%;
 }
 
 .production__button {
   position: absolute;
-  bottom: 50%;
-  right: 50%;
+  top: 50%;
+  left: 50%;
+
   transform: translate(-50%, -50%);
   width: 101px;
   height: 77px;
@@ -69,16 +78,24 @@
   background-image: url("../img/icon-play.svg");
 }
 
-.production__video {
-  width: 260px;
-
+.production__wrapper {
   @media (min-width: $tablet-width) {
-    width: 668px;
-    height: 743px;
+    width: 600px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
-    height: 455px;
+    width: 300px;
+  }
+}
+
+.production__video {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
   }
 }

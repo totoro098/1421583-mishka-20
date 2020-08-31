@@ -1,8 +1,27 @@
 .social__item {
   list-style: none;
-  border: 2 px solid red;
 }
 
 .social__list {
-  border: 2 px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.social {
+  width: 260px;
+  min-height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid $text-color-gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 2 px solid red;
+  }
 }
