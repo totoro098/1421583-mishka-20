@@ -52,6 +52,13 @@
   }
 }
 
+.reviews__item {
+  list-style: none;
+}
+.slider__item--closed {
+  display: none;
+}
+
 .review__author--contact {
   font-family: $main-font;
 
