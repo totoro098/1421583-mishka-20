@@ -1,64 +1,159 @@
 .production__button-buy {
-  width: 170px;
+  margin: 0;
+  margin-left: 35px;
+  max-width: 190px;
   font-family: $main-font;
 
   @include font(18px, normal);
   color: $black;
-  line-height: 20px;
-  padding: 15px 70px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 20px;
   border: 2px solid $text-color-gray;
 
   @media (min-width: $tablet-width) {
-    @include font(18px, normal);
-    width: 284px;
+    @include font(17px, normal);
+    max-width: 600px;
+    width: 584px;
+    padding: 17px 15px 14px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
+    margin-bottom: 60px;
+    margin-left: 81px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white;
+    background-color: $text-color-gray;
+  }
+
+  &:active {
+    color: rgba($main-white, 0.3);
+    background-color: $text-color-gray;
+  }
+}
+
+.production__title {
+  position: relative;
+  max-width: 140px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding-left: 60px;
+
+  @include font(17px, bold);
+  color: $black;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background: url("../img/icon-video.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 500px;
+    max-width: 510px;
+    margin: 0;
+    padding: 37px 35px 15px 106px;
+
+    &::before {
+      position: absolute;
+      top: 27px;
+      left: 41px;
+      width: 32px;
+      fill: $icon-green;
+      height: 32px;
+      content: "";
+      background: url("../img/icon-video.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 43px;
+    padding: 52px 34px 7px 53px;
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      left: 52px;
+      width: 32px;
+      height: 32px;
+      content: "";
+      background: url("../img/icon-video.svg");
+    }
   }
 }
 
 .production__text {
-  font-family: $main-font;
+  @include font(13px, normal);
+  color: $black;
+  line-height: 24px;
   width: 194px;
   padding: 16px 34px 28px 34px;
 
-  @include font(13px, normal);
-  color: $black;
-  line-height: 30px;
-  margin: 0;
-
   @media (min-width: $tablet-width) {
+    width: 595px;
+    margin: 0;
+    padding: 1px 15px 41px 40px;
+
     @include font(15px, normal);
     line-height: 30px;
-    width: 600px;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
+    margin: 0 auto;
+    padding: 10px 34px 41px 53px;
   }
 }
 
+
 .production {
-  width: 100%;
+  width: 260px;
   margin: 0 auto;
-  position: relative;
+  border: 1px solid $shadow-gray;
+  margin-bottom: 56px;
+  min-height: 490px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: 682px 1fr;
+    grid-template-rows: 40% 40% 20%;
+    margin-bottom: 99px;
   }
 }
 
 .page-main__title--catalog {
   width: 100%;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .production__button {
@@ -76,26 +171,29 @@
   background-size: contain;
   background-position: center;
   background-image: url("../img/icon-play.svg");
-}
 
-.production__wrapper {
-  @media (min-width: $tablet-width) {
-    width: 600px;
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
-  @media (min-width: $desktop-width) {
-    width: 300px;
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
   }
 }
 
 .production__video {
-  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 600px;
+    order: -1;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 600px;
+    grid-row-start: 1;
+    grid-row-end: 4;
   }
 }

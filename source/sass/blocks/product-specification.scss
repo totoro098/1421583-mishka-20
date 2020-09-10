@@ -7,6 +7,11 @@
   color: $text-color-gray;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 291px;
@@ -17,11 +22,15 @@
   @include font(15px, normal);
   line-height: 20px;
   width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .product-specification__value {
   @include font(15px, normal);
   line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .product-specification__row {

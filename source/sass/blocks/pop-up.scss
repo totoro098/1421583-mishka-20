@@ -69,6 +69,15 @@
   @media (min-width: $tablet-width) {
     width: 112px;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $text-color-gray;
+  }
+
+  &:active {
+    border-color: $light-green;
+  }
 }
 
 .pop-up__text {
@@ -94,5 +103,16 @@
 
   @media (min-width: $tablet-width) {
     width: 350px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white;
+    background-color: $text-color-gray;
+  }
+
+  &:active {
+    color: rgba($main-white, 0.3);
+    background-color: $text-color-gray;
   }
 }

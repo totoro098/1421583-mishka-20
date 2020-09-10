@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +31,10 @@
 
 .form-full-name__item {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .form-full-name__title {
@@ -79,6 +84,9 @@
   opacity: 0.3;
   width: 100%;
   min-height: 48px;
+  padding-left: 17px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
   border-bottom: 2px solid $black;
   background-color: transparent;
   box-sizing: border-box;
@@ -95,6 +103,12 @@
     @media (min-width: $tablet-width) {
       @include font(18px,bold);
       line-height: 19px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $icon-green;
     }
   }
 

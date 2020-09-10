@@ -1,11 +1,27 @@
 .social__item {
   list-style: none;
+
+  &:hover,
+  &:focus {
+    fill: $dark-icon-green;
+  }
+
+  &:active {
+    fill: $dark-icon-green;
+    opacity: 0.3;
+  }
 }
 
 .social__list {
   display: grid;
+  align-self: center;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 40px;
+  margin: 23px 3px 4px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social {
@@ -19,9 +35,5 @@
   @media (min-width: $tablet-width) {
     border: none;
     width: 145px;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: 2 px solid red;
   }
 }

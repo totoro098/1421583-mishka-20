@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin-top: 20px;
     background-color: $footer-color;
   }
 
@@ -25,6 +26,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 8px;
     width: 500px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,8 +83,57 @@
   }
 }
 
+.form-color__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 38px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 2px solid $text-color-gray;
+  overflow: hidden;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 54px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 54px;
+    height: 52px;
+  }
+}
+
+.form-color__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 24px;
+    left: 12px;
+    top: 14px;
+  }
+}
+
+.form-color__input:hover + label::before,
+.form-color__input:focus + label::before {
+  border-color: $light-green;
+}
+
+.form-color__input:active + label::before {
+  border-color: $text-color-gray;
+  opacity: 0.3;
+}
+
 .form-color__label {
-  border: 1px solid green;
   position: relative;
   display: block;
   padding: 12px 30px 12px 60px;

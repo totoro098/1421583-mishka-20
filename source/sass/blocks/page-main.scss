@@ -26,44 +26,108 @@
 }
 
 .page-main__bg-photo {
+  background-color: $background-gray;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
-  width: 575px;
-  height: 506px;
+  background-position: 50% -17px;
+  margin: 0 auto;
+  min-height: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 1150px;
-    height: 758px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 580px;
+    bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      top: 712px;
+      z-index: 10;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat;
+      background-size: contain;
+    }
   }
+
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero-desktop@1x.jpg");
-    width: 1250px;
-    height: 763px;
+    min-height: 763px;
+    bottom: 73px;
+    padding-top: 40px;
     background-repeat: no-repeat;
     background-position: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 36px;
+      top: 789px;
+      z-index: 10;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat;
+      background-size: contain;
+    }
   }
 }
 
 .page-main__title--gray {
   background-color: $footer-color;
   width: 100%;
-  height: 177px;
+  padding-bottom: 75px;
   margin: 0 auto;
+  position: relative;
+
+  @include font(27px, bold);
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    height: 238px;
-    width: 668px;
+    width: 718px;
+    bottom: 80px;
+    padding-bottom: 70px;
+
+    @include font(43px, bold);
+    line-height: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 36px;
+      top: 210px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    height: 272px;
-    width: 1050px;
+    width: 1100px;
+    padding-bottom: 80px;
+    bottom: 53px;
+    margin-bottom: 65px;
+
+    @include font(53px, bold);
+    line-height: 57px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 36px;
+      top: 210px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 }
 
@@ -73,15 +137,20 @@
   @include font(25px, bold);
   line-height: 30px;
   color: $text-color-gray;
+  margin-left: 25px;
 
   @media (min-width: $tablet-width) {
     @include font(45px, bold);
     line-height: 50px;
+    margin-left: 45px;
+    margin-top: 140px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(53px, bold);
     line-height: 57px;
+    margin-left: 195px;
+    margin-top: -40px;
   }
 }
 
@@ -97,5 +166,27 @@
   @media (min-width: $desktop-width) {
     width: 1150px;
     margin: 0 auto;
+  }
+}
+
+.page-main__title--catalog {
+  font-family: $main-font;
+
+  @include font(17px, bold);
+  color: $black;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 3px 2px 18px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, bold);
+    line-height: 24px;
+    padding: 28px 3px 2px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, bold);
+    line-height: 24px;
   }
 }

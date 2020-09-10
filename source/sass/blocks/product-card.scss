@@ -11,11 +11,13 @@
   @media (min-width: $tablet-width) {
     width: 100px;
     line-height: 17px;
+    margin: 8px 2px 20px 133px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     order: 0;
+    margin: 8px 2px 20px 38px;
   }
 }
 
@@ -24,6 +26,8 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+    margin-left: 35px;
+    padding: 0;
   }
 }
 
@@ -31,6 +35,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    margin: 1px 2px 20px 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 150px;
+  }
 }
 
 .product-card {
@@ -75,16 +87,21 @@
   @include font(17px, bold);
   line-height: 24px;
   color: $text-color-gray;
+  text-align: center;
+  margin: 20px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, bold);
     line-height: 24px;
+    padding: 1px 20px 30px 12px;
+    margin: 10px;
   }
 }
 
 .product-card__button {
   width: 260px;
   margin: 0 auto;
+  margin-top: 15px;
   padding: 15px 70px;
   border: 2px solid $text-color-gray;
   font-family: $main-font;
@@ -96,6 +113,18 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     padding: 14px 86px;
+    margin-top: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white;
+    background-color: $text-color-gray;
+  }
+
+  &:active {
+    color: rgba($main-white, 0.3);
+    background-color: $text-color-gray;
   }
 }
 
@@ -116,12 +145,16 @@
   @media (min-width: $tablet-width) {
     width: 292px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 170px;
+  }
 }
 
 .product-card__img {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
     width: 333px;
     height: 100%;
@@ -129,7 +162,9 @@
 
   @media (min-width: $desktop-width) {
     width: 60%;
-    z-index: -1;
+    z-index: -3;
+    left: 530px;
+    top: -130px;
   }
 }
 
@@ -137,5 +172,9 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
     width: 292px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 90px 2px 20px 170px;
   }
 }

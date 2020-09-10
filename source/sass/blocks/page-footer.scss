@@ -3,14 +3,15 @@
   box-sizing: border-box;
   width: 100%;
   background-color: $footer-color;
+  margin-top: 60px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 668px;
+    width: 718px;
     margin: 37px auto;
     min-height: 143px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,24 +26,82 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 110px;
+    margin-left: 20px;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     width: 144px;
   }
+
+  &:hover,
+  &:focus {
+    fill: $dark-icon-green;
+  }
+
+  &:active {
+    fill: $dark-icon-green;
+    opacity: 0.3;
+  }
+}
+
+.social__link-icon {
+  fill: $black;
+
+  &:hover,
+  &:focus {
+    fill: $dark-icon-green;
+  }
+
+  &:active {
+    fill: $dark-icon-green;
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
   font-family: $main-font;
+  margin-left: 65px;
 
   @include font(19px, bold);
   color: $black;
   line-height: 18px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 190px;
+    margin-left: 65px;
+    padding: 0;
+    width: 160px;
+  }
+}
+
+.copyright__link-icon {
+  fill: $icon-green;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    fill: $black;
+    margin-right: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $dark-icon-green;
+  }
+
+  &:active {
+    fill: $dark-icon-green;
+    opacity: 0.3;
+  }
+}
+
+.copyright {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
   }
 }

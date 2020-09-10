@@ -5,20 +5,31 @@
   color: $black;
   line-height: 30px;
   margin: 0;
+  padding: 14px 3px 2px 27px;
 
   @media (min-width: $tablet-width) {
     @include font(15px, normal);
     line-height: 30px;
+    padding: 10px 3px 2px 34px;
   }
 }
 
 .card__price {
   @include font(15px, bold);
   line-height: 24px;
+  width: 110px;
+  padding: 7px 3px 2px 25px;
 
   @media (min-width: $tablet-width) {
     @include font(17px, bold);
     line-height: 24px;
+    width: 100%;
+    padding: 3px 3px 2px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 206px;
+    padding: 3px 3px 2px 24px;
   }
 }
 
@@ -26,7 +37,26 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  border: 1px solid $shadow-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    border: 1px solid $shadow-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid $shadow-gray;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 }
 
 .card__img {
@@ -42,10 +72,90 @@
 }
 
 .card__order {
-  min-width: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 260px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    margin-top: 60px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      width: 250px;
+      height: 2px;
+      background-color: $shadow-gray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    margin-top: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 250px;
+      height: 2px;
+      background-color: $shadow-gray;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 250px;
+    height: 2px;
+    background-color: $shadow-gray;
+  }
 }
 
 .card__info {
   min-width: 200px;
   max-width: 340px;
+  height: 105px;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 120px;
+  }
+}
+
+.card__wrapper {
+  @media (min-width: $tablet-width) {
+    height: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 200px;
+  }
+}
+
+.card__button {
+  margin-right: 25px;
+}
+
+.card__button-img {
+  fill: $black;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $light-green;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

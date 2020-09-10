@@ -1,15 +1,37 @@
 .contacts__button {
   width: 260px;
   font-family: $main-font;
+  margin-left: 30px;
+  text-transform: uppercase;
+  text-align: center;
 
   @include font(18px, normal);
   color: $black;
   line-height: 20px;
-  padding: 15px 70px;
+  padding: 15px;
   border: 2px solid $text-color-gray;
+
 
   @media (min-width: $tablet-width) {
     @include font(18px, normal);
+    margin-left: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 290px;
+    right: 550px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white;
+    background-color: $text-color-gray;
+  }
+
+  &:active {
+    color: rgba($main-white, 0.3);
+    background-color: $text-color-gray;
   }
 }
 
@@ -17,17 +39,22 @@
   width: 320px;
   margin: 0 auto;
   position: relative;
+  margin-top: 73px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, bold);
     line-height: 22px;
-    width: 668px;
+    width: 718px;
+    margin-left: 0;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(20px, bold);
     line-height: 22px;
     width: 1050px;
+    margin-top: 323px;
   }
 
   &::before {
@@ -38,17 +65,21 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat;
     background-size: contain;
+    bottom: 750px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       width: 768px;
       height: 15px;
+      bottom: 900px;
+      left: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 1050px;
       height: 21px;
-      top: 0;
-      left: 0;
+      bottom: 1050px;
+      left: 20px;
     }
   }
 }
@@ -56,13 +87,20 @@
 .contacts__title--main {
   position: relative;
 
+  @include font(18px, bold);
+  line-height: 24px;
+
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+
     &::after {
       position: absolute;
       content: "";
       width: 47px;
       height: 81px;
-      right: 3px;
+      right: 0;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -71,6 +109,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 100px;
+    flex-shrink: 0;
+    width: 300px;
 
     &::after {
       position: absolute;

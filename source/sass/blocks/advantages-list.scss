@@ -7,14 +7,14 @@
     width: 755px;
     grid-template-columns: 325px 325px;
     grid-template-rows: 115px 105px 115px;
-    column-gap: 90px;
-    row-gap: 60px;
+    column-gap: 10px;
+    row-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 715px;
-    column-gap: 115px;
-    padding-left: 225px;
+    column-gap: 35px;
+    padding-left: 180px;
   }
 
   &::before {
@@ -25,11 +25,12 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat;
     background-size: contain;
+    bottom: 835px;
 
     @media (min-width: $tablet-width) {
       width: 768px;
       height: 15px;
-      top: 7px;
+      bottom: 595px;
     }
 
     @media (min-width: $desktop-width) {
@@ -50,12 +51,14 @@
   @include font(17px, bold);
   color: $black;
   line-height: 20px;
-  padding: 57px 0 30px;
-  margin-bottom: 30px;
+  padding: 40px 0 30px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, bold);
     line-height: 22px;
+    padding: 20px 0 30px 20px;
+    margin-top: 25px;
   }
 
   &--eco::before {
@@ -65,7 +68,14 @@
     content: url("../img/icon-feature-flower.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
+    }
+  }
+
+  &--style {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
     }
   }
 
@@ -76,7 +86,14 @@
     content: url("../img/icon-feature-money.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
+    }
+  }
+
+  &--likes {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
     }
   }
 
@@ -87,7 +104,14 @@
     content: url("../img/icon-feature-heart.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
+    }
+  }
+
+  &--handmade {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
     }
   }
 
@@ -98,7 +122,14 @@
     content: url("../img/icon-feature-ball.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
+    }
+  }
+
+  &--native {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
     }
   }
 
@@ -109,18 +140,18 @@
     content: url("../img/icon-feature-rocket.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
     }
   }
 
   &--box::before {
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     fill: $icon-green;
     content: url("../img/icon-feature-gift.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 55px;
+      bottom: 85px;
     }
   }
 }

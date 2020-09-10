@@ -2,9 +2,11 @@
   box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin-top: 0;
 
     @include font(20px, bold);
     line-height: 22px;
@@ -12,12 +14,15 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    margin-bottom: 55px;
+    margin-top: 20px;
   }
 }
 
 .cards__item {
   list-style: none;
   font-family: $main-font;
+  border: 1px solid $shadow-gray;
 
   @include font(17px, bold);
   color: $black;

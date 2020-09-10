@@ -5,7 +5,8 @@
   color: $black;
   line-height: 20px;
   width: 320px;
-  margin: 0 auto;
+  margin-top: 90px;
+  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, bold);
@@ -17,5 +18,6 @@
     @include font(20px, bold);
     line-height: 22px;
     width: 1050px;
+    margin-top: 0;
   }
 }

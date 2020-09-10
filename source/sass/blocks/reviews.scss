@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,23 +7,29 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin: 0;
     background: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-position: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     background: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-position: 20px 40px;
   }
 }
 
 .reviews__write {
   width: 260px;
-  padding: 15px 70px;
+  padding: 15px;
+  text-align: center;
   border: 2px solid $text-color-gray;
   font-family: $main-font;
+  text-transform: uppercase;
   order: 5;
+  margin: 40px 5px 20px 15px;
 
   @include font(17px, bold);
   line-height: 20px;
@@ -31,6 +37,25 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
+    order: 0;
+    height: 27px;
+    padding: 15px 3px 10px 2px;
+    margin: 110px 5px 20px 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 120px 5px 20px 420px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white;
+    background-color: $text-color-gray;
+  }
+
+  &:active {
+    color: rgba($main-white, 0.3);
+    background-color: $text-color-gray;
   }
 }
 
@@ -39,22 +64,41 @@
   font-family: $main-font;
   order: 2;
 
-  @include font(15px, bold);
+  @include font(15px, normal);
   color: $black;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+
+    @include font(17px, normal);
+    color: $black;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 773px;
+    margin-left: 160px;
   }
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
 }
 
 .reviews__item {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 484px;
+  }
 }
+
 .slider__item--closed {
   display: none;
 }
@@ -67,8 +111,14 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    @include font(18px, bold);
+    @include font(18px, normal);
     line-height: 24px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $dark-icon-green;
   }
 }
 
@@ -80,7 +130,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    @include font(18px, normal);
+    @include font(18px, bold);
     line-height: 24px;
   }
 }
@@ -90,9 +140,22 @@
   width: 129px;
   min-height: 51px;
   border: 1px solid $text-color-gray;
+  margin-left: 30px;
+  margin-right: 0;
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -101,20 +164,69 @@
   width: 129px;
   min-height: 51px;
   border: 1px solid $text-color-gray;
+  margin-left: 0;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .reviews__wrapper-button {
   order: 4;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 354px;
+    order: 3;
+    height: 51px;
+    position: absolute;
+    top: 200px;
+    left: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 160px;
+    left: 860px;
+  }
+}
+
+.slider__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 
 .reviews__title {
-  order: 1;
+  order: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 120px 20px 2px 200px;
+  }
 }
 
 .reviews__wrapper-author {
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 20px 2px 1px;
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 160px;
+  }
 }
