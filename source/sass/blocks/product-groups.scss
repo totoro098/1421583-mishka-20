@@ -18,7 +18,7 @@
 
 .product-groups__icon {
   fill: $dark-green;
-  margin-left: 35px;
+  margin-left: 38px;
 
   @media (min-width: $desktop-width) {
     margin-left: 105px;
@@ -26,7 +26,7 @@
 }
 
 .product-groups__icon--interior {
-  margin-left: 52px;
+  margin-left: 54px;
 
   @media (min-width: $desktop-width) {
     margin-left: 130px;
@@ -68,7 +68,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -105,5 +105,5 @@
 .product-groups__text {
   width: 140px;
   height: 60px;
-  margin-left: 35px;
+  margin-left: 33px;
 }

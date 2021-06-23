@@ -2,6 +2,8 @@
   display: grid;
   position: relative;
   width: 260px;
+  margin-left:22px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 755px;
@@ -63,7 +65,8 @@
 
   &--eco::before {
     position: absolute;
-    bottom: 75px;
+    bottom: 78px;
+    left:0;
     fill: $icon-green;
     content: url("../img/icon-feature-flower.svg");
 
